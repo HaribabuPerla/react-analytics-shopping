@@ -1,0 +1,30 @@
+.header-container{
+    background-color:black;
+    padding:10px;
+};
+
+.header{
+    color:white;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.links-container{
+   display: flex;
+gap:20px
+
+}
+.route-link{
+    color:white;
+    text-decoration: none;
+    
+}
+.card-img{
+    height: 400px;
+}
+.item-card{
+    border-radius: 20px;
+}
