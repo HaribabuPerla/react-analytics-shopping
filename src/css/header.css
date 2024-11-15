@@ -27,4 +27,33 @@ gap:20px
 }
 .item-card{
     border-radius: 20px;
+  
+}
+.card{
+    position:relative !important;
+}
+.card-body{
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+.cartBadge{
+    position: absolute;
+    top: 1px;
+    right: 12px;
+    color: yellow;
+    font-size: 18px;
+    background-color:green;
+    padding:0px 4px;
+    border-radius: 100%;
+
+}
+.snackbar{
+    position: absolute;
+    z-index: 1;
+    left: 40%;
+    top: 10%;
+    border-radius:20px;
+}
+.snackbar-inner{
+    padding: 20px;
 }

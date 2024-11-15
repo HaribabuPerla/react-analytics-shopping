@@ -1,0 +1,25 @@
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.preview-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 120px; /* Adjust position next to thumbnail */
+    z-index: 10;
+    border: 2px solid #ccc;
+}
+
+.preview-image {
+    width: 300px;
+    height: auto;
+    display: block;
+}

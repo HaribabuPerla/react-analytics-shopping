@@ -1,0 +1,15 @@
+.totalPrice{
+    color:yellow;
+    background-color:black;
+    padding:20;
+    border:1px solid;
+    border-radius:10px;
+    width:30%;
+    text-align: center;
+    margin-top:20px
+}
+.cart-items-heading{
+    font-size:24px;
+    font-style:italic;
+    margin-top:10px;
+}

@@ -1,35 +1,13 @@
 import React from "react";
 import "../css/header.css";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../helper/cartContext";
 
 
 export default function Header(){
+  const{cartData}=useContext(CartContext)
     return(
-        // <div className="header-container">
-        //     <div className="flex-container">
-        //     <div>
-        //     <h3 style={{color:"white"}}>Hari Sai Mobiles</h3>
-        //     </div>
-        //     <div>
-        //     <nav className="links-container">
-         
-        //     <div >
-        //        <Link className="route-link" to="/">Home</Link>
-        //     </div>
-        //     <div >
-        //       <Link className="route-link" to="/details">Details</Link> 
-        //     </div>
-        //     <div className="route-link">
-        //        <Link className="route-link" to="/cart">Cart</Link> 
-        //     </div>
-           
-         
-            
-        
-        // </nav>
-        // </div>
-        // </div>
-        // </div>
         <nav className="navbar navbar-expand-lg bg-dark">
   <div className="container-fluid">
     <div className="d-flex flex-row justify-content-between align-items-center w-100 h-100">
@@ -45,11 +23,19 @@ export default function Header(){
         <li className="nav-item">
           <Link className="nav-link text-white active" aria-current="page" to="/">Home</Link>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <Link className="nav-link text-white" to ="/details">Details</Link>
-        </li>
+        </li> */}
+        
         <li className="nav-item">
-          <Link className="nav-link text-white" to ="/cart">Cart</Link>
+          <Link className="nav-link text-white" to ="/cart">
+          {
+            cartData?.length > 0 &&
+            <div className="cartBadge">{cartData?.length}</div>
+          }
+          
+          Cart
+          </Link>
         </li>
         
       </ul>

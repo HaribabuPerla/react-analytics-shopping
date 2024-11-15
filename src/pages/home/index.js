@@ -10,7 +10,7 @@ const Home = () => {
           mobilesData?.map((item)=>{
             return(
               <div key={item?.id} className='col-12 col-md-4'>
-                 <ItemCard data={item}/>
+                 <ItemCard data={item} btnTwo="Add To Cart"/>
             </div>
             )
             
